@@ -1,0 +1,128 @@
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-image: url("../assets/img/BackgroundImg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.Logo{
+  position: absolute;
+}
+.custom-button:hover{
+  color: rgba(1, 191, 244, 0.78);
+  
+}
+
+.Navbar {
+  background-image: url("../assets/img/NavbarImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  border:solid 0.1vh rgb(166, 0, 255);
+  
+  height: 30vh;
+  width: 100%;
+  position: relative;
+}
+.Navbar-nav {
+  top: 5%;
+  width: 90%;
+  flex-wrap: wrap;
+  position: relative;
+  margin-left: 5vh;
+  margin-right: 2vh;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+
+}
+
+.Avatar:hover{
+  animation: around 6s infinite;
+}
+@keyframes around{
+  0%{
+    transform: rotateY(0deg);
+  }
+  100%{
+    transform: rotateY(360deg);
+  }
+}
+
+.SerchBar{
+  all: unset;
+  position: absolute;
+  background-color: black;
+  border: solid  blue;
+  top: 20vh;
+}
+.Footer{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  position: relative;
+border: solid 0.1vh rgb(166, 0, 255);
+height: 20vh;
+width: 100%;
+ background-color: rgba(0, 0, 0, 0.371);
+ color: azure;
+}
+.CreatorSocial{
+  margin: 0vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+/*MEDIA DE 768PX*/
+
+@media screen and (max-width: 768px) {
+ 
+  .Avatar{
+    all: unset;
+    left:1vh;
+    position: fixed;
+  
+  }
+  .Navbar {
+    height: 70vh;
+  }
+  .Navbar-nav {
+    flex-direction: column; /* Cambiar a disposición vertical */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    margin: 0; /* Eliminar los márgenes laterales */
+    width: 100%;
+    padding: 10px; /* Añadir espacio interno entre los botones */
+    top: 0%;
+  }
+ 
+  .SerchBar{
+    all: unset;
+    position: relative;
+    background-color: black;
+    border: solid  blue;
+    
+  }
+  .Footer{
+    height: 100%;
+    margin-top: 1vh;
+
+  }
+  
+}
+
+/*MEDIA DE 350PX*/
+
+@media screen and (max-width: 350px) {
+  html{
+    height: unset;
+  }
+}
